@@ -1,0 +1,66 @@
+.button {
+  font-family: "r_fallouty", "sans-serif";
+  border: none;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    156deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(41, 90, 168, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+button:hover {
+  background-color: blue;
+  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+button:active {
+  transform: translateY(4px);
+}
+
+.equals {
+  grid-column: 3 / 5;
+  background: rgb(176, 20, 20);
+  background: linear-gradient(
+    156deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(176, 20, 20, 1) 50%,
+    rgba(176, 20, 20, 1) 100%
+  );
+  border: none;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.equals:hover {
+  background: rgb(176, 20, 20);
+  background: linear-gradient(
+    156deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(176, 20, 20, 1) 50%,
+    rgba(176, 20, 20, 1) 100%
+  );
+  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}

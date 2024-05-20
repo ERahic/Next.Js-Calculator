@@ -31,3 +31,25 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: "JH_FALLOUT";
+  src: url(../app/assets/font/JH_FALLOUT.TTF);
+}
+
+@font-face {
+  font-family: "r_fallouty";
+  src: url(../app/assets/font/r_fallouty.ttf);
+}
+
+@font-face {
+  font-family: "TT0807M_";
+  src: url(../app/assets/font/TT0807M_.TTF);
+}
+
+p {
+  text-align: center;
+  justify-content: center;
+  font-family: "r_fallouty";
+  font-size: 50px;
+}

@@ -1,0 +1,57 @@
+.screen {
+  font-family: "r_fallouty", sans-serif;
+  caret-color: transparent;
+  font-size: 40px;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0 15px;
+  border-radius: 10px;
+  background: rgb(54, 145, 44);
+  background: linear-gradient(
+    0deg,
+    rgba(54, 145, 44, 1) 5%,
+    rgba(77, 194, 59, 1) 27%,
+    rgba(61, 222, 37, 1) 60%,
+    rgba(49, 150, 18, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: black;
+  text-shadow:
+    1px 1px 2px white,
+    0 0 25px green,
+    0 0 5px #006400;
+  font-weight: bold;
+  box-sizing: border-box;
+  -webkit-animation: glowing 1s ease-in-out infinite alternate;
+  animation: glowing 1s ease-in-out infinite alternate;
+
+  /* -webkit-box-shadow: 0px 0px 105px 10px rgba(67, 255, 46, 0.5);
+  -moz-box-shadow: 0px 0px 105px 10px rgba(67, 255, 46, 0.5);
+  box-shadow: 0px 0px 105px 10px rgba(67, 255, 46, 0.5); */
+}
+
+@keyframes glowing {
+  from {
+    box-shadow:
+      0 0 10px #838383,
+      0 0 20px #838383,
+      0 0 30px #838383,
+      0 0 40px #838383,
+      0 0 50px #838383,
+      0 0 60px #838383,
+      0 0 70px #838383;
+  }
+  to {
+    box-shadow:
+      0 0 20px rgb(58, 219, 58),
+      0 0 30px rgb(58, 219, 58),
+      0 0 40px rgb(58, 219, 58),
+      0 0 50px rgb(58, 219, 58),
+      0 0 60px rgb(58, 219, 58),
+      0 0 70px rgb(58, 219, 58),
+      0 0 80px lightgreen;
+  }
+}
