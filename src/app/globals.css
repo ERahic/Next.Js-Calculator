@@ -48,8 +48,8 @@ body {
 }
 
 p {
+  caret-color: transparent;
   text-align: center;
   justify-content: center;
   font-family: "r_fallouty";
-  font-size: 50px;
 }
