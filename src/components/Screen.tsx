@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Screen = (props: Props) => {
-  return <div className="screen">{props.value}</div>;
+  return <div className={props.className}>{props.value}</div>;
 };
 
 export default Screen;

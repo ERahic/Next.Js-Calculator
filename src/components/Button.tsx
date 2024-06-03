@@ -12,9 +12,9 @@ const Button = (prop: Props) => {
   };
 
   return (
-    <button className={prop.className} onClick={btnPress}>
+    <div className={prop.className} onClick={btnPress}>
       {prop.value}
-    </button>
+    </div>
   );
 };
 

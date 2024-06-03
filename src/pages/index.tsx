@@ -1,3 +1,4 @@
+import "tailwindcss/tailwind.css";
 import "../app/globals.css";
 import React, { useState } from "react";
 import { evaluate } from "mathjs";
@@ -107,10 +108,10 @@ export default function Home() {
         // If key entered is multiplication
         if (key === "x") {
           if (priorNumber && sign && currentNumber) {
-            setSign("*")
-            setSolution(evaluate(priorNumber + sign + currentNumber))
-            setPriorNumber(evaluate(priorNumber + sign + currentNumber))
-            setCurrentNumber("0")
+            setSign("*");
+            setSolution(evaluate(priorNumber + sign + currentNumber));
+            setPriorNumber(evaluate(priorNumber + sign + currentNumber));
+            setCurrentNumber("0");
             break;
           }
           setSign("*");
@@ -125,10 +126,10 @@ export default function Home() {
         }
         // If equation is continuous and equals button not pressed
         if (priorNumber && sign && currentNumber) {
-          setSolution(evaluate(priorNumber + sign + currentNumber))
-          setPriorNumber(evaluate(priorNumber + sign + currentNumber))
-          setCurrentNumber("0")
-          setSign(key)
+          setSolution(evaluate(priorNumber + sign + currentNumber));
+          setPriorNumber(evaluate(priorNumber + sign + currentNumber));
+          setCurrentNumber("0");
+          setSign(key);
           break;
         }
         // sets sign to sign button pressed and saves the prior number to move onto current
@@ -149,14 +150,17 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-flex md:w-auto">
+      <div className="w-flex">
         <p>
           Hello! My name is Edis Rahic and thank you for checking out my first
           project using Next.js React. Please give this a try to do your
           homework or taxes, it works!
         </p>
         <Wrapper>
-          <Screen className="screen" value={currentNumber}></Screen>
+          <Screen
+            className={`screen ${currentNumber === "Error, Cannot Divide By 0" ? "error" : "screen"}`}
+            value={currentNumber}
+          ></Screen>
           <ButtonBox className="buttonBox">
             {buttonValues.map((btn, i) => {
               return (

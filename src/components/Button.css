@@ -1,14 +1,13 @@
 .button {
+  border: 1px solid rgb(46, 46, 6);
+  all: unset;
+  text-align: center;
+  padding: 0px;
+  line-height: 125px;
   font-family: "r_fallouty", "sans-serif";
   border: none;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    156deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(41, 90, 168, 1) 50%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  font-size: 25px;
+  background: rgba(2, 0, 36, 1);
+  font-size: 2rem;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -18,30 +17,41 @@
   -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
   z-index: 1;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition:
+    ease 500ms,
+    background-color 500ms linear;
 }
 
-button:hover {
-  background-color: blue;
+.button:hover {
+  background: rgb(164, 168, 41) 50%;
+  background-color: linear-gradient(
+    156deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(164, 168, 41) 50%,
+    rgb(225, 255, 0) 100%
+  );
   box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 1;
 }
 
-button:active {
+.button:active {
   transform: translateY(4px);
+  background: rgba(2, 0, 36, 1);
+  transition: ease 100ms;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
 }
 
 .equals {
   grid-column: 3 / 5;
-  background: rgb(176, 20, 20);
-  background: linear-gradient(
-    156deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(176, 20, 20, 1) 50%,
-    rgba(176, 20, 20, 1) 100%
-  );
+  background: rgb(114, 10, 10);
   border: none;
-  font-size: 20px;
+  font-size: 2rem;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -53,14 +63,16 @@ button:active {
 }
 
 .equals:hover {
-  background: rgb(176, 20, 20);
-  background: linear-gradient(
-    156deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(176, 20, 20, 1) 50%,
-    rgba(176, 20, 20, 1) 100%
-  );
+  background: rgb(9, 120, 20);
   box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.equals:active {
+  transform: translateY(4px);
+  background: rgb(114, 10, 10);
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
 }
