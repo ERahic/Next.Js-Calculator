@@ -41,8 +41,9 @@ export default function Home() {
       // Case to clear screen and useState of any variables saved
       case "C":
         setCurrentNumber("0");
-        setPriorNumber("0");
+        setPriorNumber("");
         setSign("");
+        setSolution("");
         break;
       // case for number button keys
       case "0":
@@ -103,16 +104,34 @@ export default function Home() {
       case "-":
       case "x":
       case "/":
+        // If key entered is multiplication
         if (key === "x") {
+          if (priorNumber && sign && currentNumber) {
+            setSign("*")
+            setSolution(evaluate(priorNumber + sign + currentNumber))
+            setPriorNumber(evaluate(priorNumber + sign + currentNumber))
+            setCurrentNumber("0")
+            break;
+          }
           setSign("*");
           setPriorNumber(currentNumber);
           setCurrentNumber("0");
           break;
         }
+        // If user tries to divide number by 0
         if (priorNumber && key === "/" && currentNumber === "0") {
           setCurrentNumber("Error, Cannot Divide By 0");
           break;
         }
+        // If equation is continuous and equals button not pressed
+        if (priorNumber && sign && currentNumber) {
+          setSolution(evaluate(priorNumber + sign + currentNumber))
+          setPriorNumber(evaluate(priorNumber + sign + currentNumber))
+          setCurrentNumber("0")
+          setSign(key)
+          break;
+        }
+        // sets sign to sign button pressed and saves the prior number to move onto current
         setSign(key);
         setPriorNumber(currentNumber);
         setCurrentNumber("0");
