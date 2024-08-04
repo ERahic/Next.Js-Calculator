@@ -4,6 +4,7 @@ type Props = {
   value: string;
   onClick?: any;
   className: string;
+  isActive: boolean;
 };
 
 const Button = (prop: Props) => {
@@ -12,7 +13,10 @@ const Button = (prop: Props) => {
   };
 
   return (
-    <div className={prop.className} onClick={btnPress}>
+    <div
+      className={`${prop.className} ${prop.isActive ? "active" : ""}`}
+      onClick={btnPress}
+    >
       {prop.value}
     </div>
   );

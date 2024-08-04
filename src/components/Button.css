@@ -47,6 +47,21 @@
   transition: background-color 100ms linear;
 }
 
+.button.active {
+  transform: translateY(4px);
+  background: rgb(164, 168, 41) 50%;
+  background-color: linear-gradient(
+    156deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(164, 168, 41) 50%,
+    rgb(225, 255, 0) 100%
+  );
+  transition: ease 100ms;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
 .equals {
   grid-column: 3 / 5;
   background: rgb(114, 10, 10);
@@ -75,4 +90,11 @@
   -webkit-transition: background-color 100ms linear;
   -ms-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
+}
+
+.equals.active {
+  background: rgb(9, 120, 20);
+  box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }

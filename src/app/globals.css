@@ -71,3 +71,13 @@ p {
   font-family: "r_fallouty";
   font-size: 2rem;
 }
+
+/* Media quiery to hide the legend on small screens (mobile phones) */
+@media (max-width: 768px) {
+  .legend {
+    display: none;
+  }
+  p {
+    text-align: center;
+  }
+}

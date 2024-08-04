@@ -38,8 +38,8 @@
   animation: glowing 1s ease-in-out infinite alternate;
 
   /* -webkit-box-shadow: 0px 0px 105px 10px rgba(67, 255, 46, 0.5);
-  -moz-box-shadow: 0px 0px 105px 10px rgba(67, 255, 46, 0.5);
-  box-shadow: 0px 0px 105px 10px rgba(67, 255, 46, 0.5); */
+    -moz-box-shadow: 0px 0px 105px 10px rgba(67, 255, 46, 0.5);
+    box-shadow: 0px 0px 105px 10px rgba(67, 255, 46, 0.5); */
 }
 
 @keyframes glowing {
